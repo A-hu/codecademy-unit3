@@ -2,6 +2,7 @@
 let database = {
   users: {},
   articles: {},
+  comments: {},
   nextArticleId: 1
 };
 
