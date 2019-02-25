@@ -32,6 +32,7 @@ const routes = {
   '/comments': {},
   '/comments/:id': {},
   '/comments/:id/upvote': {},
+  '/comments/:id/downvote': {},
 };
 
 function getUser(url, request) {
