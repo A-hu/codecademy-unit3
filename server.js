@@ -31,6 +31,7 @@ const routes = {
   },
   '/comments': {},
   '/comments/:id': {},
+  '/comments/:id/upvote': {},
 };
 
 function getUser(url, request) {
