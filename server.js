@@ -29,7 +29,9 @@ const routes = {
   '/articles/:id/downvote': {
     'PUT': downvoteArticle
   },
-  '/comments': {},
+  '/comments': {
+    'POST': ''
+  },
   '/comments/:id': {},
   '/comments/:id/upvote': {},
   '/comments/:id/downvote': {},
@@ -61,8 +63,6 @@ function getUser(url, request) {
 }
 
 function getOrCreateUser(url, request) {
-  const username = request.body && request.body.username;
-  const response = {};
 
   if (database.users[username]) {
     response.body = {user: database.users[username]};
